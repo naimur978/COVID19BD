@@ -62,4 +62,6 @@ dependencies {
 
     //no internet
     implementation 'com.github.vasu-bhardwaj:NoInternet:V1.3'
+
+    implementation 'com.github.TheBrownArrow:CustomTypeface:1.0.3'
 }

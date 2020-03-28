@@ -4,8 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.widget.ProgressBar;
 
 import com.fivemin.chief.nonetworklibrary.networkBroadcast.NoNet;
 import com.github.mikephil.charting.charts.PieChart;
@@ -36,29 +39,38 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fm = null;
     private NoNet mNoNet;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
-        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         fm = getSupportFragmentManager();
         mNoNet = new NoNet();
         mNoNet.initNoNet(this, fm);
 
-        serviceViewModel_all = ViewModelProviders.of(this)
-                .get(CoronaServiceViewModel_All.class);
 
-        observeViewModel(serviceViewModel_all);
-
-
-        apiInterface = ApiClient.getClient().create(ApiInterface.class);
-        apiCall();
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
 
 
-    }
+
+                        serviceViewModel_all = ViewModelProviders.of(MainActivity.this)
+                                .get(CoronaServiceViewModel_All.class);
+
+                        observeViewModel(serviceViewModel_all);
+
+
+                        apiInterface = ApiClient.getClient().create(ApiInterface.class);
+                        apiCall();
+
+                    }
+
+
+
+
+
+
 
     private void observeViewModel(CoronaServiceViewModel_All serviceViewModel_all) {
         serviceViewModel_all.allServiceObserver().observe(this, all -> {
