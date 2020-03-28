@@ -2,10 +2,12 @@ package com.naimur978.bd_covid19_info.pieChart;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 
+import com.fivemin.chief.nonetworklibrary.networkBroadcast.NoNet;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
@@ -31,12 +33,19 @@ public class MainActivity extends AppCompatActivity {
     ActivityMainBinding activityMainBinding;
     CoronaServiceViewModel_All serviceViewModel_all;
 
+    private FragmentManager fm = null;
+    private NoNet mNoNet;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
 
         activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        fm = getSupportFragmentManager();
+        mNoNet = new NoNet();
+        mNoNet.initNoNet(this, fm);
 
         serviceViewModel_all = ViewModelProviders.of(this)
                 .get(CoronaServiceViewModel_All.class);
@@ -145,6 +154,18 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    protected void onResume() {
+        mNoNet.RegisterNoNet();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        mNoNet.unRegisterNoNet();
+        super.onPause();
     }
 
 

@@ -59,4 +59,7 @@ dependencies {
     //livedata
     //ViewModel LifeCycle
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+
+    //no internet
+    implementation 'com.github.vasu-bhardwaj:NoInternet:V1.3'
 }
