@@ -1,4 +1,4 @@
-package com.naimur978.bd_covid19_info;
+package com.naimur978.bd_covid19_info.PieChart;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,10 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.naimur978.bd_covid19_info.api.ApiClient;
-import com.naimur978.bd_covid19_info.api.ApiInterface;
-import com.naimur978.bd_covid19_info.model.PieStatistics;
+import com.naimur978.bd_covid19_info.PieChart.api.ApiClient;
+import com.naimur978.bd_covid19_info.PieChart.api.ApiInterface;
+import com.naimur978.bd_covid19_info.PieChart.model.PieStatistics;
+import com.naimur978.bd_covid19_info.R;
 
 import java.util.ArrayList;
 
