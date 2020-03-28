@@ -1,0 +1,2 @@
+rootProject.name='BD-COVID19-INFO'
+include ':app'
