@@ -1,6 +1,8 @@
-package com.naimur978.bd_covid19_info.PieChart;
+package com.naimur978.bd_covid19_info.pieChart;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.databinding.DataBindingUtil;
+import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
 
@@ -9,9 +11,11 @@ import com.github.mikephil.charting.data.Entry;
 import com.github.mikephil.charting.data.PieData;
 import com.github.mikephil.charting.data.PieDataSet;
 import com.github.mikephil.charting.utils.ColorTemplate;
-import com.naimur978.bd_covid19_info.PieChart.api.ApiClient;
-import com.naimur978.bd_covid19_info.PieChart.api.ApiInterface;
-import com.naimur978.bd_covid19_info.PieChart.model.PieStatistics;
+import com.naimur978.bd_covid19_info.cardView.viewmodel.CoronaServiceViewModel_All;
+import com.naimur978.bd_covid19_info.databinding.ActivityMainBinding;
+import com.naimur978.bd_covid19_info.pieChart.api.ApiClient;
+import com.naimur978.bd_covid19_info.pieChart.api.ApiInterface;
+import com.naimur978.bd_covid19_info.pieChart.model.PieStatistics;
 import com.naimur978.bd_covid19_info.R;
 
 import java.util.ArrayList;
@@ -24,10 +28,20 @@ public class MainActivity extends AppCompatActivity {
 
     public ApiInterface apiInterface;
 
+    ActivityMainBinding activityMainBinding;
+    CoronaServiceViewModel_All serviceViewModel_all;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+
+
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+
+        serviceViewModel_all = ViewModelProviders.of(this)
+                .get(CoronaServiceViewModel_All.class);
+
+        observeViewModel(serviceViewModel_all);
 
 
         apiInterface = ApiClient.getClient().create(ApiInterface.class);
@@ -35,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void observeViewModel(CoronaServiceViewModel_All serviceViewModel_all) {
+        serviceViewModel_all.allServiceObserver().observe(this, all -> {
+
+            if(all != null){
+                activityMainBinding.setAll(all);
+            }
+        });
     }
 
 

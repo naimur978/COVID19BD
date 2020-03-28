@@ -1,4 +1,4 @@
-package com.naimur978.bd_covid19_info.PieChart.api;
+package com.naimur978.bd_covid19_info.pieChart.api;
 
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;

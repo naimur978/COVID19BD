@@ -1,4 +1,4 @@
-package com.naimur978.bd_covid19_info.PieChart.model;
+package com.naimur978.bd_covid19_info.pieChart.model;
 
 public class PieStatistics {
     @com.google.gson.annotations.Expose

@@ -1,7 +1,7 @@
-package com.naimur978.bd_covid19_info.PieChart.api;
+package com.naimur978.bd_covid19_info.pieChart.api;
 
 
-import com.naimur978.bd_covid19_info.PieChart.model.PieStatistics;
+import com.naimur978.bd_covid19_info.pieChart.model.PieStatistics;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
