@@ -98,11 +98,11 @@ public class MainActivity extends AppCompatActivity {
         pieChartData.add(new Entry(pieStatistics.getDeaths(), 0));
         pieChartData.add(new Entry(pieStatistics.getRecovered(), 1));
         pieChartData.add(new Entry(pieStatistics.getActive(), 2));
-        pieChartData.add(new Entry(pieStatistics.getCritical(), 3));
 
 
 
-        PieDataSet dataSet = new PieDataSet(pieChartData, "Bangladesh");
+
+        PieDataSet dataSet = new PieDataSet(pieChartData, "");
         dataSet.setValueTextSize(14);
 
 
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity {
         pieChartSectionName.add("Deaths");
         pieChartSectionName.add("Recovered");
         pieChartSectionName.add("Active");
-        pieChartSectionName.add("Critical");
+
 
         dataSet.setColors(ColorTemplate.COLORFUL_COLORS);
 

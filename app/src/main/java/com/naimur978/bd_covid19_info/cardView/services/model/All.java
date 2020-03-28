@@ -22,6 +22,12 @@ public class All {
     @com.google.gson.annotations.Expose
     @com.google.gson.annotations.SerializedName("todayDeaths")
     private String todayDeaths;
+    @com.google.gson.annotations.Expose
+    @com.google.gson.annotations.SerializedName("casesPerOneMillion")
+    private String casesPerOneMillion;
+    @com.google.gson.annotations.Expose
+    @com.google.gson.annotations.SerializedName("deathsPerOneMillion")
+    private String deathsPerOneMillion;
 
 
     public String getCases() {
@@ -78,5 +84,21 @@ public class All {
 
     public void setTodayDeaths(String todayDeaths) {
         this.todayDeaths = todayDeaths;
+    }
+
+    public String getCasesPerOneMillion() {
+        return casesPerOneMillion;
+    }
+
+    public void setCasesPerOneMillion(String casesPerOneMillion) {
+        this.casesPerOneMillion = casesPerOneMillion;
+    }
+
+    public String getDeathsPerOneMillion() {
+        return deathsPerOneMillion;
+    }
+
+    public void setDeathsPerOneMillion(String deathsPerOneMillion) {
+        this.deathsPerOneMillion = deathsPerOneMillion;
     }
 }

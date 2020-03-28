@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.bottom_view);
+        activityMainBinding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
         serviceViewModel_all = ViewModelProviders.of(this).get(CoronaServiceViewModel_All.class);
 

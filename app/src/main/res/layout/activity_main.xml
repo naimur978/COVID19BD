@@ -17,7 +17,8 @@
 <androidx.coordinatorlayout.widget.CoordinatorLayout
 
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#D3F8F8">
 
 
 
@@ -28,16 +29,21 @@
 
         <com.github.mikephil.charting.charts.PieChart
             android:id="@+id/piechart"
-            android:layout_width="410dp"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:background="@android:color/background_light"
             android:layout_height="510dp"
+            android:layout_marginBottom="10dp"
              />
 
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
-            android:layout_width="match_parent"
+            android:layout_width="380dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
             android:layout_height="wrap_content">
 
             <LinearLayout
@@ -55,13 +61,14 @@
                 <androidx.cardview.widget.CardView
                     android:elevation="10dp"
                     android:id="@+id/item1"
-                    android:layout_width="125dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_below="@+id/txt_message"
-                    android:layout_marginLeft="10dp"
-                    android:background="#935050"
+
+                    android:background="#F8F8F8"
                     android:theme="@style/ThemeOverlay.AppCompat.Light"
-                    app:cardBackgroundColor="@android:color/secondary_text_dark"
+                    app:cardBackgroundColor="@android:color/background_light"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
                     app:layout_collapseMode="pin">
@@ -84,7 +91,7 @@
                                 android:layout_gravity="center"
 
                                 android:layout_marginTop="2dp"
-                                android:text="Today Confirmed"
+                                android:text="Total Infected"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
 
@@ -94,7 +101,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="@{all.deaths}"
+                                android:text="@{all.cases}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -110,13 +117,14 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/item2"
-                    android:layout_width="125dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_below="@+id/txt_message"
                     android:layout_marginLeft="10dp"
                     android:background="#FFFFFF"
                     android:theme="@style/ThemeOverlay.AppCompat.Light"
-                    app:cardBackgroundColor="@android:color/secondary_text_dark_nodisable"
+                    app:cardBackgroundColor="@android:color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
                     app:layout_collapseMode="pin">
@@ -149,7 +157,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="Numbers"
+                                android:text="@{all.todayCases}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -164,13 +172,14 @@
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/item3"
-                    android:layout_width="125dp"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_below="@+id/txt_message"
                     android:layout_marginLeft="10dp"
                     android:background="#FFFFFF"
                     android:theme="@style/ThemeOverlay.AppCompat.Light"
-                    app:cardBackgroundColor="@android:color/tab_indicator_text"
+                    app:cardBackgroundColor="@android:color/white"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
                     app:layout_collapseMode="pin">
@@ -193,7 +202,7 @@
                                 android:layout_gravity="center"
 
                                 android:layout_marginTop="2dp"
-                                android:text="Today Confirmed"
+                                android:text="Today Deaths"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
 
@@ -203,7 +212,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="Numbers"
+                                android:text="@{all.todayDeaths}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -239,7 +248,7 @@
                     android:layout_margin="10dp"
                     android:background="#935050"
                     android:theme="@style/ThemeOverlay.AppCompat.Light"
-                    app:cardBackgroundColor="@android:color/secondary_text_dark"
+                    app:cardBackgroundColor="@android:color/transparent"
                     app:cardCornerRadius="10dp"
                     app:cardElevation="0dp"
                     app:layout_collapseMode="pin">
@@ -262,7 +271,7 @@
                                 android:layout_gravity="center"
 
                                 android:layout_marginTop="2dp"
-                                android:text="Today Confirmed"
+                                android:text="Critical"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
 
@@ -272,7 +281,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="Numbers"
+                                android:text="@{all.critical}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -317,7 +326,7 @@
                                 android:layout_gravity="center"
 
                                 android:layout_marginTop="2dp"
-                                android:text="Today Confirmed"
+                                android:text="Infected Per Million"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
 
@@ -327,7 +336,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="Numbers"
+                                android:text="@{all.casesPerOneMillion}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -371,7 +380,7 @@
                                 android:layout_gravity="center"
 
                                 android:layout_marginTop="2dp"
-                                android:text="Today Confirmed"
+                                android:text="Deaths Per Million"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
 
@@ -381,7 +390,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="20dp"
                                 android:layout_marginBottom="15dp"
-                                android:text="Numbers"
+                                android:text="@{all.deathsPerOneMillion}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="12sp" />
                         </LinearLayout>
@@ -397,7 +406,7 @@
 
             </LinearLayout>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
 
 
 
