@@ -21,21 +21,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/cardView/services/repository/CoronaServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/cardView/services/repository/CoronaServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/cardView/services/repository/RetrofitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/cardView/services/repository/RetrofitService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/api/ApiClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/api/ApiClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/api/ApiInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/naimur978/bd_covid19_info/pieChart/api/ApiInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/chewy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/allerta.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/kalam_bold.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/merienda_one.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/font/patrick_hand.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/montserrat.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/preloaded_fonts.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +31,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_XL_API_26" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="44d50054" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -72,8 +60,8 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3_XL_API_26" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-28T15:26:41.757Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="44d50054" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-28T15:33:55.064Z" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />

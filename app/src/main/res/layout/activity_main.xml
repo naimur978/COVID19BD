@@ -48,7 +48,7 @@
 
                     android:fontFamily="@font/allerta"
 
-                    android:text="Bangladesh Coronavirus Updates"
+                    android:text="Bangladesh COVID-19 Updates"
 
                     android:textColor="#393939"
                     android:textSize="20sp"
