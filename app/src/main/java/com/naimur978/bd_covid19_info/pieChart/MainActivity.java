@@ -6,8 +6,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
 
 import com.fivemin.chief.nonetworklibrary.networkBroadcast.NoNet;
@@ -22,6 +25,7 @@ import com.naimur978.bd_covid19_info.pieChart.api.ApiClient;
 import com.naimur978.bd_covid19_info.pieChart.api.ApiInterface;
 import com.naimur978.bd_covid19_info.pieChart.model.PieStatistics;
 import com.naimur978.bd_covid19_info.R;
+
 
 import java.util.ArrayList;
 
@@ -39,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fm = null;
     private NoNet mNoNet;
 
-
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

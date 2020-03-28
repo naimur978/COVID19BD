@@ -12,7 +12,7 @@ import retrofit2.http.GET;
 
 public interface ApiInterface {
 
-    @GET("bangladesh")
+    @GET("countries/bangladesh")
     Call<PieStatistics> init();
 
 }

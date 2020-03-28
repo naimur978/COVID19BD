@@ -31,7 +31,7 @@ public class ApiClient {
                      *  base url here for api
                      */
 
-                    .baseUrl("https://corona.lmao.ninja/countries/")
+                    .baseUrl("https://corona.lmao.ninja/")
                     .build();
         }
         return retrofit;

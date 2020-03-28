@@ -25,37 +25,40 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
+        android:layout_marginTop="5dp"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:layout_margin="8dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingLeft="20dp"
-                android:text="Scenario of Bangladesh"
-                android:layout_marginLeft="15dp"
-                android:fontFamily="@font/merienda_one"
-                android:paddingEnd="40dp"
-                android:textSize="18sp"
-                android:textColor="#393939"
-                android:textStyle="bold"/>
 
-            <Button
-                android:id="@+id/button"
-                android:layout_width="30dip"
-
-                android:layout_height="30dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginEnd="0dp"
-                android:background="@drawable/internet" />
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="16dp"
+                android:layout_below="@+id/txt_message"
+                android:layout_gravity="center"
+                app:cardCornerRadius="10dp"
 
 
-        </LinearLayout>
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:fontFamily="@font/allerta"
+
+                    android:text="Bangladesh Coronavirus Updates"
+
+                    android:textColor="#393939"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
 
 
 
@@ -139,8 +142,10 @@
                                 android:layout_height="wrap_content"
 
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+
                                 android:text="@{all.cases}"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />
                             <!--android:text="@{all.cases}"-->
@@ -203,13 +208,12 @@
 
 
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:text="@{all.todayCases}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />
-                            <!--android:text="@{all.cases}"-->
-                            android:textColor="#0E0E0E"
-                            android:textSize="12sp" />
+
                         </LinearLayout>
 
                         <FrameLayout
@@ -270,13 +274,12 @@
 
 
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:text="@{all.todayDeaths}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />
-                            <!--android:text="@{all.cases}"-->
-                            android:textColor="#0E0E0E"
-                            android:textSize="12sp" />
+
                         </LinearLayout>
 
                         <FrameLayout
@@ -352,7 +355,8 @@
 
 
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:text="@{all.critical}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />
@@ -413,7 +417,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:text="@{all.casesPerOneMillion}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />
@@ -475,7 +480,8 @@
 
 
                                 android:layout_weight="1"
-                                android:fontFamily="@font/kalam_bold"
+                                android:textStyle="bold"
+                                android:fontFamily="@font/patrick_hand"
                                 android:text="@{all.deathsPerOneMillion}"
                                 android:textColor="#0E0E0E"
                                 android:textSize="20sp" />

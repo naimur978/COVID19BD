@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="preloaded_fonts" translatable="false">
-        <item>@font/chewy</item>
-        <item>@font/kalam_bold</item>
+        <item>@font/allerta</item>
+
         <item>@font/lato</item>
-        <item>@font/merienda_one</item>
-        <item>@font/montserrat</item>
+
+        <item>@font/patrick_hand</item>
     </array>
 </resources>

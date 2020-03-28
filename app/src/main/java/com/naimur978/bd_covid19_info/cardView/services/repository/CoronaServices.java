@@ -8,7 +8,7 @@ import retrofit2.http.GET;
 
 public interface CoronaServices {
 
-    @GET("bangladesh")
+    @GET("countries/bangladesh")
     Call<All> getAllInfo();
 
 
